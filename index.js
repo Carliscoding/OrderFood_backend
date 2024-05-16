@@ -8,7 +8,7 @@ const router = require('./routes')
 
 const app = express()
 const corsOptions = {
-    origin: process.env.FRONTEND_URL, // URL của frontend
+    origin: 'process.env.FRONTEND_URL', // URL của frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Các phương thức yêu cầu được phép
     credentials: true, // Cho phép gửi cookie và thông tin xác thực
     allowedHeaders: 'Content-Type,Authorization', // Các header được phép
